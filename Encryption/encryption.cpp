@@ -16,30 +16,30 @@ int main(){
 	FILE* fptr2;
 	
 	printf("2.1 & 2.2\n");
-	printf("½Ğ¿é¤J¥[±Kª÷Æ_¡G");
+	printf("è«‹è¼¸å…¥åŠ å¯†é‡‘é‘°ï¼š");
 	while(scanf("%s", key)){
 		if((key[0] == '-') && (key[1] == '1')){
-			printf("µ²§ô¥»ÃD\n");
+			printf("çµæŸæœ¬é¡Œ\n");
 			break;
 		}
 		else{
-			printf("¥[±Kªí®æ¬°¡G\n");
+			printf("åŠ å¯†è¡¨æ ¼ç‚ºï¼š\n");
 			encryption_table(key, table);
 			
-			printf("\n½Ğ¿é¤J±ı¥[±K¤º®e¡G");
+			printf("\nè«‹è¼¸å…¥æ¬²åŠ å¯†å…§å®¹ï¼š");
 			for(int i = 0; i < L; i++)
 				text[i] = '\0';
 			scanf("%s", text);
-			printf("¥[±Kµ²ªG¬°¡G");
+			printf("åŠ å¯†çµæœç‚ºï¼š");
 			encryption_number(text, table);
 			if((fptr1 = fopen("text1.txt", "w")) == NULL)
-				printf("ÀÉ®×µLªk¶}±Ò\n");
+				printf("æª”æ¡ˆç„¡æ³•é–‹å•Ÿ\n");
 			else{
 				fprintf(fptr1, "%s", text);
 				fclose(fptr1);
 			}
 		}
-		printf("\n½Ğ¿é¤J¥[±Kª÷Æ_¡G");
+		printf("\nè«‹è¼¸å…¥åŠ å¯†é‡‘é‘°ï¼š");
 	}
 	
 	
@@ -47,13 +47,13 @@ int main(){
 	printf("\n\n\n\n2.3\n");
 	for(int i = 0; i < L; i++)
 		text[i] = '\0';
-	printf("ªwªj±Æ§Ç«áµ²ªG¡G");
+	printf("æ³¡æ²«æ’åºå¾Œçµæœï¼š");
 	if((fptr2 = fopen("text1.txt", "r")) == NULL)
-		printf("ÀÉ®×µLªk¶}±Ò\n");
+		printf("æª”æ¡ˆç„¡æ³•é–‹å•Ÿ\n");
 	else
 		fscanf(fptr2, "%s", text);
 	BubbleSort(text);
-	printf("µ²§ô¥»ÃD\n");
+	printf("çµæŸæœ¬é¡Œ\n");
 	
 	system("pause");
 	return 0;
