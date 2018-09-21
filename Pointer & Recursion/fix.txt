@@ -1,2 +1,2 @@
-10.2 recursiveªº³¡¤À
-        void longpow(int A , int B , int C) §ó§ï¬° int longpow(int A , int B , int C)
+10.2 recursiveçš„éƒ¨åˆ†
+        void longpow(int A , int B , int C) æ›´æ”¹ç‚º int longpow(int A , int B , int C)
