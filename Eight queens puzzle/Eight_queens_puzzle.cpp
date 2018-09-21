@@ -14,7 +14,7 @@ int main(){
 }
 
 void abc(){
-	printf("²Ä %d ºØ\n",sum);
+	printf("ç¬¬ %d ç¨®\n",sum);
 	for(int i=1;i<9;i++){
 		for(int j=1;j<9;j++){
 			if(c[i]==j)
@@ -28,15 +28,15 @@ void abc(){
 }
 
 int check(int a,int b){
-	for(int i=a-1;i>0;i--){						//¤W 
+	for(int i=a-1;i>0;i--){				//ä¸Š 
 		if(c[i]==b)
 			return 0;
 	}
-	for(int i=a-1,j=b+1;i>0&&j<9;i--,j++){		//¥k¤W 
+	for(int i=a-1,j=b+1;i>0&&j<9;i--,j++){		//å³ä¸Š 
 		if(c[i]+i==i+j)
 			return 0;
 	}
-	for(int i=a-1,j=b-1;i>0&&j>0;i--,j--){		//¥ª¤W 
+	for(int i=a-1,j=b-1;i>0&&j>0;i--,j--){		//å·¦ä¸Š 
 		if(c[i]-i==j-i)
 			return 0;
 	}
