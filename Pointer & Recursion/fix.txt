@@ -1,0 +1,2 @@
+10.2 recursive的部分
+        void longpow(int A , int B , int C) 更改為 int longpow(int A , int B , int C)
